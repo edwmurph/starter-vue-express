@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    response from server:
     {{ serverResponse }}
   </div>
 </template>
@@ -14,7 +15,7 @@ export default {
   },
 
   async created() {
-    this.serverResponse = await this.$fetch( '/' );
+    this.serverResponse = await this.$fetch( '/api/hello' );
   }
 
 };

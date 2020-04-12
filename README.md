@@ -1,26 +1,23 @@
 # minimal-vue-starter
 
-My minimal starter for a Vue project built with vue-cli.
+My minimal starter for a Vue project.
 
 ## Project setup
 ```
-npm install
+nvm use && npm install
 ```
 
-### Compiles and hot-reloads for development
+### Bundles client w/hot-reloading and starts server for development
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+npm run dev
 ```
 
-### Lints and fixes files
+### Bundles client and starts server for production
+```
+npm run prod
+```
+
+### Lint files
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

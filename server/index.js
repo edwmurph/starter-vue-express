@@ -17,6 +17,8 @@ const main = () => {
       })
     );
 
+    server.use( express.static('./dist') );
+
     server.use( routes.helloWorld );
 
     server.listen( port, () => console.log( `server listening on port ${port}!` ) );

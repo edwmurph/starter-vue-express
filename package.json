@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "node server/index.js",
     "dev": "./scripts/dev.sh",
-    "build": "parcel client/index.html",
+    "prod": "npm run build && npm start",
+    "build": "parcel build client/index.html",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -13,17 +15,20 @@
     "cors": "2.8.5",
     "express": "4.17.1",
     "parcel-bundler": "1.12.4",
-    "vue": "2.6.11"
+    "vue": "2.6.11",
+    "vue-hot-reload-api": "2.3.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.2.3",
     "@vue/cli-plugin-eslint": "4.2.3",
+    "@vue/component-compiler-utils": "3.1.2",
     "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
     "eslint-plugin-import": "2.20.1",
     "eslint-plugin-prefer-arrow": "1.1.7",
     "eslint-plugin-vue": "6.2.2",
-    "nodemon": "2.0.2"
+    "nodemon": "2.0.2",
+    "vue-template-compiler": "2.6.11"
   },
   "browserslist": [
     "last 1 Chrome versions"
