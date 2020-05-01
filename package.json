@@ -1,7 +1,6 @@
 {
-  "name": "minimal-vue-starter",
+  "name": "starter-vue-express",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "start": "node server/index.js",
     "dev": "./scripts/dev.sh",

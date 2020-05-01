@@ -1,6 +1,6 @@
-# minimal-vue-starter
+# starter-vue-express
 
-My minimal starter for a Vue project.
+My minimal starter for a Vue + Express project.
 
 ## Project setup
 ```
