@@ -1,11 +1,3 @@
 module.exports = {
-  env: {
-    browser: true,
-  },
-  extends: [
-    'plugin:vue/essential',
-  ],
-  parserOptions: {
-    parser: 'babel-eslint',
-  },
+  extends: '@edwmurph/eslint-config/vue',
 };

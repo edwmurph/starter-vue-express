@@ -6,5 +6,5 @@ const $fetch = async( path, opts ) => {
 };
 
 export default {
-  install: ( Vue ) => { Vue.prototype.$fetch = $fetch; }
+  install: ( Vue ) => { Vue.prototype.$fetch = $fetch; },
 };

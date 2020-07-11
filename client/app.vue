@@ -10,7 +10,7 @@ export default {
 
   data() {
     return {
-      serverResponse: ''
+      serverResponse: '',
     };
   },
 
@@ -22,8 +22,8 @@ export default {
   methods: {
     delayedResponse() {
       setTimeout( () => this.serverResponse = 'changed', 2000 );
-    }
-  }
+    },
+  },
 
 };
 </script>
