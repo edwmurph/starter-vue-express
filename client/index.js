@@ -1,10 +1,7 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
 import App from './app.vue';
-import plugins from '/plugins';
+import plugins from './plugins';
 
-Vue.use( plugins.fetch );
-
-new Vue({
-  el: '#app',
-  render: h => h( App )
-});
+createApp( App )
+  .use( plugins.fetch )
+  .mount('#app');
