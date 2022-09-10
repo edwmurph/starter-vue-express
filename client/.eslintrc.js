@@ -1,3 +1,3 @@
 module.exports = {
-  extends: '@edwmurph/eslint-config/vue',
+  extends: '@edwmurph/eslint-config/vue'
 };

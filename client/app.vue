@@ -10,20 +10,20 @@ export default {
 
   data() {
     return {
-      serverResponse: '',
+      serverResponse: ''
     };
   },
 
   async created() {
-    this.serverResponse = await this.$fetch( '/api/hello' );
+    this.serverResponse = await this.$fetch('/api/hello');
     this.delayedResponse();
   },
 
   methods: {
     delayedResponse() {
       setTimeout( () => this.serverResponse = 'changed', 2000 );
-    },
-  },
+    }
+  }
 
 };
 </script>

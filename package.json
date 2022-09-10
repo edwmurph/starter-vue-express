@@ -1,6 +1,6 @@
 {
   "name": "starter-vue-express",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "scripts": {
     "start": "node server/index.js",
     "dev": "./scripts/dev.sh",
@@ -22,11 +22,8 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.2.3",
     "@vue/component-compiler-utils": "3.1.2",
-    "@edwmurph/eslint-config": "0.0.1",
+    "@edwmurph/eslint-config": "edwmurph/eslint-config",
     "nodemon": "2.0.2",
     "vue-template-compiler": "2.6.11"
-  },
-  "browserslist": [
-    "last 1 Chrome versions"
-  ]
+  }
 }

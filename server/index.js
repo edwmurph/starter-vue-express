@@ -1,6 +1,6 @@
-const express = require( 'express' );
+const express = require('express');
 const cors = require('cors');
-const routes = require( './routes' );
+const routes = require('./routes');
 
 const port = 3000;
 
@@ -10,18 +10,18 @@ const main = () => {
 
     server.use(
       cors({
-        origin: "*",
-        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+        origin: '*',
+        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         preflightContinue: false,
-        optionsSuccessStatus: 204,
-      }),
+        optionsSuccessStatus: 204
+      })
     );
 
     server.use( express.static('./dist') );
 
     server.use( routes.helloWorld );
 
-    server.listen( port, () => console.log( `server listening on port ${port}!` ) );
+    server.listen( port, () => console.log( `server listening on port ${ port }!` ) );
   } catch ( ex ) {
     console.error( 'global exception:', ex );
   }
